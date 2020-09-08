@@ -4,8 +4,8 @@
     <type name="Magento\Config\Model\Config\TypePool">
         <arguments>
             <argument name="environment" xsi:type="array">
-                <item name="vinhcd_aws/api_key/access_key" xsi:type="string">1</item>
-                <item name="vinhcd_aws/api_key/secret" xsi:type="string">1</item>
+                <item name="vinhcd_aws/general/access_key" xsi:type="string">1</item>
+                <item name="vinhcd_aws/general/secret" xsi:type="string">1</item>
             </argument>
         </arguments>
     </type>

@@ -9,14 +9,18 @@
             <label>AWS Configuration</label>
             <tab>vinhcd</tab>
             <resource>Vinhcd_Core::config</resource>
-            <group id="api_key" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>API Key</label>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
                 <field id="access_key" translate="label" type="text" sortOrder="10" showInDefault="1">
                     <label>Access key</label>
                 </field>
                 <field id="secret" translate="label" type="text" sortOrder="20" showInDefault="1">
                     <label>Secret</label>
-                    <comment>It's highly recommend that you store the API key and Secret in .env file</comment>
+                    <comment>It's highly recommend that you store the Access key and Secret in .env file</comment>
+                </field>
+                <field id="region" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Default region</label>
+                    <source_model>Vinhcd\Core\Model\Config\Source\Region</source_model>
                 </field>
             </group>
         </section>
